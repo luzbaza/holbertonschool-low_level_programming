@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
  * print_square - function that prints a square, followed by a new line
- *@size: prints a square
+ * @size: prints a square
  * Return: print the square
  */
 void print_square(int size)
@@ -16,5 +16,9 @@ void print_square(int size)
 		_putchar ('#');
 	}
 	_putchar('\n');
+	}
+	if (size <= 0)
+	{
+	_putchar ('\n');
 	}
 }
