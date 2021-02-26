@@ -1,4 +1,5 @@
 #include "holberton.h"
+int squareroot (int n , int c)
 /**
  * _sqrt_recursion - checks for perfect square
  * @n: string
