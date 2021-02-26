@@ -1,7 +1,7 @@
 #include "holberton.h"
 int squareroot(int n, int c);
 /**
- * _sqrt_recursion - that returns the natural square root of a number
+ * _sqrt_recursion - checks for perfect square
  * @n: string
  * Return: Always 0
  */
