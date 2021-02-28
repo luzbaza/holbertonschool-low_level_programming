@@ -9,21 +9,21 @@
  */
 int main(int argc, char *argv[])
 {
-	int e, s = 0;
+	int s = 0, j, d, l;
 
-	if (argc < 1)
-		return (0);
-
-	for (e = 1; e < argc; e++)
+	for (j = 1; j < argc; j++)
 	{
-		if (!atoi(argv[e]))
+		for (d = 0; argv[j][d] != '\0'; d++)
 		{
-			printf("%s\n", "Error");
-			return (1);
+			if (argv[j][d] < '0' || argv[j][d] > '9')
+			{
+				printf("Error\n");
+				return(1);
+			}
 		}
-		s += atoi(argv[e]);
+		l = atoi(argv[j]);
+		s += l;
 	}
 	printf("%d\n", s);
-
 	return (0);
 }
