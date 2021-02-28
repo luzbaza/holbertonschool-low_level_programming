@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 			if (argv[j][d] < '0' || argv[j][d] > '9')
 			{
 				printf("Error\n");
-				return(1);
+				return (1);
 			}
 		}
 		l = atoi(argv[j]);
