@@ -2,8 +2,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - program that multiplies two numbers
- * atoi  is a funtion tjat converts a string into an int
+ * main -  program that multiplies two numbers
+ * atoi - function that converts a string into a int
  * @argc: number of arguments
  * @argv: array pointing to arguements
  * Return: 0
