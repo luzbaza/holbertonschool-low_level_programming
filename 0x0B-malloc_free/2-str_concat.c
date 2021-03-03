@@ -9,24 +9,32 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	int f, g, size;
+	int f, g, size = 0;
 	char *v;
 
-	for (f = 0; s1[f] != '\0'; f++)
-		;
-	for (g = 0; s2[g] != '\0'; g++)
-		;
-	size = f + g + 1;
-	v = malloc(sizeof(char) * size);
-	if (v == 0)
-		return (NULL);
-	for (f = 0; s1[f] != '\0'; f++)
+	if (s1 == NULL || s2 == NULL)
+		s1 = s2 = "";
+
+	for (f = 0; f <= *s1; f++)
 	{
-		*(v + f) = *(s1 + f);
 	}
-	for (g = 0; s2[g] != '\0'; g++)
+	for (g = 0; g <= *s2; g++)
 	{
-		*(v + f + g) = *(s2 + g);
+	}
+	v = malloc(sizeof(char) * (f + g + 1));
+	if (v == NULL)
+		return (NULL);
+	while (*s1)
+	{
+		v[size] = *s1;
+		size++;
+		s1++;
+	}
+	while (*s2)
+	{
+		v[size] = *s2;
+		size++;
+		s2++;
 	}
 	return (v);
 }
