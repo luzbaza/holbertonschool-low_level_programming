@@ -9,32 +9,32 @@
  */
 int **alloc_grid(int width, int height)
 {
-	int **dimen;
-	int a, b;
+	int **dimen, a, b;
 
 	if (width <= 0 || height <= 0)
 		return (NULL);
 
-	dimen = malloc(sizeof(int) * height);
-
+	dimen = malloc(sizeof(int *) * height);
 	if (dimen == NULL)
-	{
-		free(dimen);
 		return (NULL);
-	}
-
 	for (a = 0; a < height; a++)
 	{
 		dimen[a] = malloc(sizeof(int) * width);
-		if (dimen == NULL)
+		if (dimen[a] == NULL)
 		{
+			for (; a >= 0; a--)
+			{
+				free(dimen[a]);
+			}
 			free(dimen);
 			return (NULL);
 		}
+	}
+	for (a = 0; a < height; a++)
+	{
 		for (b = 0; b < width; b++)
-		{
 			dimen[a][b] = 0;
-		}
 	}
 	return (dimen);
+
 }
