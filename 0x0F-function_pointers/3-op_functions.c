@@ -2,10 +2,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * op_add - functions
+ * op_add - 5 functions
  * @a: one
  * @b: two
- * Return : Always 0
+ * Return: Always 0
  */
 int op_add(int a, int b)
 {
@@ -13,10 +13,10 @@ int op_add(int a, int b)
 }
 
 /**
- * op_sub - functions
+ * op_sub - 5 functions
  * @a: one
  * @b: two
- * Return: 0
+ * Return: Always  0
  */
 int op_sub(int a, int b)
 {
@@ -24,7 +24,7 @@ int op_sub(int a, int b)
 }
 
 /**
- * op_mul - functions
+ * op_mul - 5 functions
  * @a: one
  * @b: two
  * Return: Always 0
@@ -36,7 +36,7 @@ int op_mul(int a, int b)
 }
 
 /**
- * op_div - functions
+ * op_div - 5 functions
  * @a: one
  * @b: two
  * Return: Always 0
@@ -47,7 +47,7 @@ int op_div(int a, int b)
 }
 
 /**
- * op_mod - functions
+ * op_mod - 5 functions
  * @a: one
  * @b: two
  * Return: Always 0
