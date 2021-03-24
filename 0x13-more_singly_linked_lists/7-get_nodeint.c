@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * get_nodeint_at_index - function that returns the nth node 
+ * get_nodeint_at_index - function that returns the nth node
  * of a linked list listint_t.
  * @head: pointer to the first node in the list
  * @index: is the index of the node, starting at 0
